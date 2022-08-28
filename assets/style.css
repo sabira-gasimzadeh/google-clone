@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 a {
@@ -18,9 +19,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-nav button {
+.nav-links a:hover {
+    background-color:#dedede ;
+    border-radius: 1px solid rgba(175, 145, 145, 0.87) ;
+    cursor: pointer;
+}
+.nav-links button {
     margin-right: 7px;
+}
+
+.nav-links button:hover {
+    background-color: #0d76ab;
+    color: #dedede;
+    cursor: pointer;
+}
+
+.nav-links img {
+    border-radius: 35px;
 }
 
 
@@ -36,8 +51,9 @@ section {
 
 .search-section {
     min-width: 582px;
-    height: 34px;
+    height: 44px;
     position: relative;
+    border-radius: 35px;
 }
 
 .search-section input {
@@ -48,16 +64,27 @@ section {
     padding: 0 45px;
 }
 
+.search-section:hover {
+    box-shadow: 0px 0px 3px rgba(175, 145, 145, 0.87);
+}
+
+.nav-links img:hover {
+    box-shadow: 0px 0px 3px rgba(175, 145, 145, 0.87);
+}
+
+section a {
+    color: #1a0dab;
+}
 .s-icon {
     position: absolute;
-    top: 22%;
+    top: 26%;
     left: 3%;
     opacity: .4;
 }
 
 .vs-icon {
     position: absolute;
-    top: 22%;
+    top: 26%;
     right: 3%;
 }
 
@@ -84,7 +111,7 @@ img {
 
 
 
-nav {
+.nav-links {
     flex-basis: 10%;
     display: flex;
     justify-content: flex-end;
@@ -99,6 +126,14 @@ section {
 .buttons-group {
     display: flex;
     gap: 10px;
+}
+
+.button-groups>button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgba(175, 145, 145, 0.87);
+}
+.search-section:hover {
+    box-shadow: 0px 0px 3px rgba(175, 145, 145, 0.87);
 }
 
 section button {
@@ -116,7 +151,7 @@ section a {
 footer {
     flex-basis: 10%;
     color: #70757a;
-    background-color: #e0dada;
+    background-color: rgba(242, 248, 242, 0.822);
 }
 
 
@@ -128,6 +163,7 @@ footer h4 {
 footer .links {
     display: flex;
     justify-content: space-between;
+    font: 14px;
     color: #70757a;
     padding: 10px;
 }
